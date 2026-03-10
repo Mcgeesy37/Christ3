@@ -1092,3 +1092,78 @@ select{
   border:1px solid transparent;
   box-shadow: 0 14px 34px rgba(107,92,255,.16);
 }
+
+/* ===== Premium Search / Valuation Controls (iOS-safe) ===== */
+
+/* Base for all inputs/selects */
+input, select, textarea{
+  font: inherit;
+}
+
+/* Kill iOS native look */
+select, input[type="text"], input[type="email"], input[type="search"]{
+  -webkit-appearance: none;
+  appearance: none;
+  background-clip: padding-box;
+}
+
+/* Premium field style */
+input[type="text"], input[type="email"], input[type="search"], select{
+  height: 40px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(11,16,32,.14);
+  background: rgba(255,255,255,.92);
+  color: rgba(11,16,32,.92);
+  box-shadow: 0 10px 24px rgba(11,16,32,.06);
+  outline: none;
+}
+
+/* Focus ring like the rest of the brand */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+select:focus{
+  border-color: rgba(107,92,255,.55);
+  box-shadow: 0 0 0 4px rgba(107,92,255,.12), 0 10px 24px rgba(11,16,32,.06);
+}
+
+/* Make selects look premium with a custom arrow (works even with no wrapper) */
+select{
+  padding-right: 38px;
+  background-image:
+    linear-gradient(45deg, transparent 50%, rgba(11,16,32,.55) 50%),
+    linear-gradient(135deg, rgba(11,16,32,.55) 50%, transparent 50%),
+    linear-gradient(to right, transparent, transparent);
+  background-position:
+    calc(100% - 18px) 55%,
+    calc(100% - 12px) 55%,
+    0 0;
+  background-size: 6px 6px, 6px 6px, 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* If you have a compact search row (Ort/Kiez + Typ) make it align nicely */
+.searchRow, .filterRow, .valueRow{
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 12px;
+  align-items: end;
+}
+
+/* Valuation form grid (Typ/Wohnfläche/Zustand/Zeitraum/E-Mail) */
+.valueGrid, .valuationGrid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Mobile */
+@media (max-width: 980px){
+  .searchRow, .filterRow, .valueRow{ grid-template-columns: 1fr; }
+  .valueGrid, .valuationGrid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px){
+  .valueGrid, .valuationGrid{ grid-template-columns: 1fr; }
+}
