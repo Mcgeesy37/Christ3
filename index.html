@@ -1,0 +1,503 @@
+<!-- FILE: /v2-white-lux/index.html -->
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Florian Christ | Immobilienmakler Berlin – Premium Beratung & Vermarktung</title>
+  <meta name="description" content="Premium Immobilienmakler in Berlin: Verkauf, Bewertung, Vermietung, Kaufberatung. Diskret, datenbasiert, verhandlungsstark." />
+  <meta name="theme-color" content="#fbfbf8" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+
+  <header class="top" data-header>
+    <div class="wrap top__inner">
+      <a class="brand" href="./index.html" aria-label="Startseite">
+        <span class="brand__mark" aria-hidden="true">FC</span>
+        <span class="brand__text">
+          <strong>Florian Christ</strong>
+          <small>Immobilienmakler Berlin</small>
+        </span>
+      </a>
+
+      <nav class="nav" data-nav aria-label="Hauptnavigation">
+        <a href="#properties">Objekte</a>
+        <a href="#services">Leistungen</a>
+        <a href="#story">Über uns</a>
+        <a href="#journal">Journal</a>
+        <a href="#kontakt" class="btn btn--sm">Erstgespräch</a>
+      </nav>
+
+      <button class="nav__toggle" type="button" data-nav-toggle aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="kicker reveal">EXKLUSIV • BERLIN • VERKAUF • BEWERTUNG</p>
+
+          <h1 class="reveal">
+            Wir verkaufen Immobilien<br />
+            <span class="serif">wie Premium-Marken.</span>
+          </h1>
+
+          <p class="lead reveal">
+            Preisstrategie, Präsentation und Verhandlung auf Top-Niveau – für Eigentümer:innen, die keine
+            Kompromisse wollen.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a class="btn" href="#kontakt">Kostenloses Erstgespräch</a>
+            <a class="btn btn--ghost" href="#value">Wert anfragen</a>
+          </div>
+
+          <div class="stats reveal" data-counters>
+            <div class="stat">
+              <strong data-count="24">0</strong><span>Std. Rückmeldung</span>
+            </div>
+            <div class="stat">
+              <strong data-count="7">0</strong><span>Tage bis Start</span>
+            </div>
+            <div class="stat">
+              <strong data-count="100">0</strong><span>Transparenz</span>
+            </div>
+          </div>
+
+          <div class="trust reveal">
+            <span>✓ Diskret möglich</span>
+            <span>✓ Geprüfte Interessenten</span>
+            <span>✓ Premium-Exposé</span>
+          </div>
+        </div>
+
+        <aside class="hero__panel reveal">
+          <div class="panel__head">
+            <span class="pill">Berlin / Brandenburg</span>
+            <span class="pill pill--soft">Premium Service</span>
+          </div>
+
+          <h2>Finden. Bewerten. Abschließen.</h2>
+          <p class="muted">
+            Die Seite ist eine Premium-Vorschau (Google-Profil-Fokus): Galerie, Leistungen, Value-Form
+            und schnelle Kontaktwege.
+          </p>
+
+          <form class="search" data-search>
+            <label>
+              <span>Ort / Kiez</span>
+              <input name="q" placeholder="z. B. Charlottenburg, Prenzlauer Berg" />
+            </label>
+            <label>
+              <span>Typ</span>
+              <select name="type">
+                <option value="Alle" selected>Alle</option>
+                <option>Wohnung</option>
+                <option>Haus</option>
+                <option>Kapitalanlage</option>
+                <option>Gewerbe</option>
+              </select>
+            </label>
+            <button class="btn btn--block" type="submit">Suche starten</button>
+            <p class="muted tiny">Preview: Filtert die Objektkarten unten (kein echtes Portal).</p>
+          </form>
+
+          <div class="mini">
+            <div><strong>Premium</strong><span class="muted">Präsentation</span></div>
+            <div><strong>Clean</strong><span class="muted">Prozess</span></div>
+            <div><strong>Strong</strong><span class="muted">Verhandlung</span></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>EXCLUSIVE PROPERTIES</span><span>•</span>
+          <span>BERLIN</span><span>•</span>
+          <span>PREMIUM MARKETING</span><span>•</span>
+          <span>OFF-MARKET</span><span>•</span>
+          <span>VALUATION</span><span>•</span>
+          <span>EXCLUSIVE PROPERTIES</span><span>•</span>
+          <span>BERLIN</span><span>•</span>
+          <span>PREMIUM MARKETING</span><span>•</span>
+          <span>OFF-MARKET</span><span>•</span>
+          <span>VALUATION</span><span>•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPERTIES -->
+    <section id="properties" class="sec">
+      <div class="wrap">
+        <header class="head">
+          <h2 class="reveal">Exclusive Properties</h2>
+          <p class="reveal muted">
+            Vorschau-Karten (später echte Referenzen/Angebote). Filterbar via Suche oben.
+          </p>
+        </header>
+
+        <div class="filters reveal">
+          <button class="chip is-on" type="button" data-filter="Alle">Alle</button>
+          <button class="chip" type="button" data-filter="Wohnung">Wohnung</button>
+          <button class="chip" type="button" data-filter="Haus">Haus</button>
+          <button class="chip" type="button" data-filter="Kapitalanlage">Kapitalanlage</button>
+          <button class="chip" type="button" data-filter="Gewerbe">Gewerbe</button>
+        </div>
+
+        <div class="grid reveal" data-grid>
+          <article class="prop" data-type="Wohnung" data-city="Charlottenburg">
+            <div class="prop__img" data-img="g1.jpg"></div>
+            <div class="prop__body">
+              <div class="prop__meta">
+                <span class="tag">NEW</span><span class="tag tag--soft">DEAL</span>
+              </div>
+              <h3>Altbauwohnung • Charlottenburg</h3>
+              <p class="muted">2 Zimmer • ca. 62 m² • Balkon</p>
+              <div class="prop__foot">
+                <span class="price">€ Preis auf Anfrage</span>
+                <button class="linkbtn" type="button" data-open-modal>Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="prop" data-type="Haus" data-city="Zehlendorf">
+            <div class="prop__img" data-img="g2.jpg"></div>
+            <div class="prop__body">
+              <div class="prop__meta">
+                <span class="tag">TOP</span><span class="tag tag--soft">OFF-MARKET</span>
+              </div>
+              <h3>Familienhaus • Zehlendorf</h3>
+              <p class="muted">5 Zimmer • Garten • Stellplatz</p>
+              <div class="prop__foot">
+                <span class="price">€ Preis auf Anfrage</span>
+                <button class="linkbtn" type="button" data-open-modal>Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="prop" data-type="Kapitalanlage" data-city="Mitte">
+            <div class="prop__img" data-img="g3.jpg"></div>
+            <div class="prop__body">
+              <div class="prop__meta">
+                <span class="tag">INVEST</span><span class="tag tag--soft">SEALED</span>
+              </div>
+              <h3>Kapitalanlage • Berlin Mitte</h3>
+              <p class="muted">Top-Lage • Renditefokus • Dokumente sauber</p>
+              <div class="prop__foot">
+                <span class="price">€ Preis auf Anfrage</span>
+                <button class="linkbtn" type="button" data-open-modal>Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="prop" data-type="Gewerbe" data-city="Friedrichshain">
+            <div class="prop__img" data-img="g4.jpg"></div>
+            <div class="prop__body">
+              <div class="prop__meta">
+                <span class="tag">NEW</span><span class="tag tag--soft">COMMERCIAL</span>
+              </div>
+              <h3>Gewerbe • Friedrichshain</h3>
+              <p class="muted">Fläche • Frequenz • Positionierung</p>
+              <div class="prop__foot">
+                <span class="price">€ Preis auf Anfrage</span>
+                <button class="linkbtn" type="button" data-open-modal>Details</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="ctaRow reveal">
+          <a class="btn btn--ghost" href="#galerie">Mehr Impressionen</a>
+          <a class="btn" href="#kontakt">Angebot anfordern</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="sec sec--alt">
+      <div class="wrap">
+        <header class="head">
+          <h2 class="reveal">Our Real Estate Expert Services</h2>
+          <p class="reveal muted">Nummerierte Services (Dimora-Stil), aber auf Berlin/Makler angepasst.</p>
+        </header>
+
+        <div class="services">
+          <article class="svc reveal">
+            <span class="no">01</span>
+            <div>
+              <h3>Real Estate Brokerage</h3>
+              <p class="muted">Interessen sauber ausbalanciert – klare Kommunikation, klare Schritte.</p>
+            </div>
+          </article>
+          <article class="svc reveal">
+            <span class="no">02</span>
+            <div>
+              <h3>Property Valuation</h3>
+              <p class="muted">Marktwert über Daten + Mikrolage + Zielgruppe. Nachvollziehbar dokumentiert.</p>
+            </div>
+          </article>
+          <article class="svc reveal">
+            <span class="no">03</span>
+            <div>
+              <h3>Management of the Sale</h3>
+              <p class="muted">Unterlagen, Exposé, Vermarktung, Besichtigungen, Prüfung, Notar, Übergabe.</p>
+            </div>
+          </article>
+          <article class="svc reveal">
+            <span class="no">04</span>
+            <div>
+              <h3>Property Research</h3>
+              <p class="muted">Für Käufer:innen: objektive Prüfung, Preischeck, Risiko-Reduktion.</p>
+            </div>
+          </article>
+          <article class="svc reveal">
+            <span class="no">05</span>
+            <div>
+              <h3>Real Estate Marketing</h3>
+              <p class="muted">Premium Visuals + Text-Story + Kanäle – Portale, Netzwerk, Off-Market.</p>
+            </div>
+          </article>
+          <article class="svc reveal">
+            <span class="no">06</span>
+            <div>
+              <h3>Real Estate Consulting</h3>
+              <p class="muted">Strategie für Timing, Preisband, Zielgruppe und Verhandlung.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="split reveal" id="value">
+          <div class="split__left">
+            <h3>Valuation Request</h3>
+            <p class="muted">Preview-Form: sammelt Daten & öffnet Mailto (live: Backend + Anti-Spam).</p>
+          </div>
+
+          <form class="value" data-value-form>
+            <label>
+              <span>Adresse / Kiez</span>
+              <input name="address" required placeholder="Straße, PLZ, Berlin" />
+            </label>
+            <div class="row">
+              <label>
+                <span>Typ</span>
+                <select name="kind" required>
+                  <option value="" selected disabled>Bitte wählen</option>
+                  <option>Wohnung</option>
+                  <option>Haus</option>
+                  <option>Kapitalanlage</option>
+                  <option>Gewerbe</option>
+                </select>
+              </label>
+              <label>
+                <span>Wohnfläche (m²)</span>
+                <input name="sqm" inputmode="numeric" placeholder="z. B. 85" />
+              </label>
+            </div>
+            <div class="row">
+              <label>
+                <span>Zustand</span>
+                <select name="condition" required>
+                  <option>Exzellent</option>
+                  <option>Gut</option>
+                  <option>Okay</option>
+                  <option>Renovierungsbedürftig</option>
+                </select>
+              </label>
+              <label>
+                <span>Zeitraum</span>
+                <select name="timing" required>
+                  <option>0–3 Monate</option>
+                  <option>3–6 Monate</option>
+                  <option>6–12 Monate</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              <span>E-Mail</span>
+              <input name="email" type="email" required placeholder="name@email.de" />
+            </label>
+            <button class="btn btn--block" type="submit">Bewertung anfragen</button>
+            <p class="muted tiny">Mit Klick bestätigst du die <a href="./datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a>.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY / TESTIMONIALS -->
+    <section id="story" class="sec">
+      <div class="wrap">
+        <div class="story">
+          <div class="story__copy">
+            <h2 class="reveal">Luxury Real Estate Agency</h2>
+            <p class="reveal muted">
+              Die Positionierung: Premium, diskret, datenbasiert. Die Kommunikation: klar, schnell, verbindlich.
+              Genau so muss sich ein 4.000€-Auftritt anfühlen.
+            </p>
+
+            <div class="quotes reveal">
+              <figure class="quote">
+                <blockquote>„Extrem strukturiert, stark in der Verhandlung und immer erreichbar.“</blockquote>
+                <figcaption>— Eigentümer:in, Berlin</figcaption>
+              </figure>
+              <figure class="quote">
+                <blockquote>„Preisstrategie war realistisch. Präsentation war Premium.“</blockquote>
+                <figcaption>— Verkäufer:in, Berlin</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="story__panel reveal">
+            <div class="big">+30</div>
+            <p class="muted">Jahre Erfahrung (Platzhalter) – hier echte Kennzahlen einsetzen.</p>
+            <a class="btn btn--ghost" href="#kontakt">Beratung sichern</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNAL -->
+    <section id="journal" class="sec sec--alt">
+      <div class="wrap">
+        <header class="head">
+          <h2 class="reveal">Journal</h2>
+          <p class="reveal muted">Preview: Blog-Karten, wirkt “Webflow Premium”.</p>
+        </header>
+
+        <div class="posts">
+          <article class="post reveal">
+            <div class="post__img" data-img="g5.jpg"></div>
+            <div class="post__body">
+              <span class="date">10. März</span>
+              <h3>Preispsychologie in Berlin: Warum “zu hoch” teuer ist</h3>
+              <p class="muted">Kurz erklärt, wie Preisbänder Nachfrage steuern.</p>
+              <a class="linkbtn" href="#kontakt">read more</a>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <div class="post__img" data-img="g6.jpg"></div>
+            <div class="post__body">
+              <span class="date">10. März</span>
+              <h3>Off-Market: Wann Diskretion mehr bringt als Reichweite</h3>
+              <p class="muted">Für bestimmte Objekte ist die leise Strategie die stärkste.</p>
+              <a class="linkbtn" href="#kontakt">read more</a>
+            </div>
+          </article>
+
+          <article class="post reveal">
+            <div class="post__img" data-img="g7.jpg"></div>
+            <div class="post__body">
+              <span class="date">10. März</span>
+              <h3>Dokumenten-Check: Die 7 Unterlagen, die Verkäufe retten</h3>
+              <p class="muted">Weniger Risiko, mehr Tempo beim Notar.</p>
+              <a class="linkbtn" href="#kontakt">read more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="galerie" class="sec">
+      <div class="wrap">
+        <header class="head">
+          <h2 class="reveal">Galerie</h2>
+          <p class="reveal muted">Google-Profil-Bilder als Premium-Grid – Klick öffnet Lightbox.</p>
+        </header>
+
+        <div class="gallery reveal" data-gallery-grid></div>
+      </div>
+
+      <div class="lightbox" data-lightbox aria-hidden="true">
+        <button class="lb__close" type="button" data-lightbox-close aria-label="Schließen">×</button>
+        <button class="lb__nav lb__nav--prev" type="button" data-lightbox-prev aria-label="Vorheriges">‹</button>
+        <img class="lb__img" data-lightbox-img alt="Galeriebild" />
+        <button class="lb__nav lb__nav--next" type="button" data-lightbox-next aria-label="Nächstes">›</button>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="kontakt" class="sec sec--alt">
+      <div class="wrap contact">
+        <div class="contact__left">
+          <h2 class="reveal">Kontakt</h2>
+          <p class="lead reveal">Kurz schildern – wir melden uns innerhalb von 24 Stunden.</p>
+
+          <div class="info reveal">
+            <div><strong>Telefon</strong><p><a href="tel:+493000000000">+49 30 00000000</a> <span class="muted tiny">(Platzhalter)</span></p></div>
+            <div><strong>E-Mail</strong><p><a href="mailto:info@beispiel.de">info@beispiel.de</a> <span class="muted tiny">(Platzhalter)</span></p></div>
+            <div><strong>Standort</strong><p>Berlin • Vor-Ort nach Absprache</p></div>
+          </div>
+
+          <div class="newsletter reveal">
+            <h3>Connect with us</h3>
+            <p class="muted">Newsletter-Vorschau (optional, später echtes Tool).</p>
+            <form data-newsletter>
+              <input name="nlemail" type="email" placeholder="E-Mail" required />
+              <button class="btn btn--sm" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <form class="form reveal" data-lead-form>
+          <label><span>Name</span><input name="name" required minlength="2" /></label>
+          <label><span>E-Mail</span><input name="email" type="email" required /></label>
+          <label><span>Telefon (optional)</span><input name="phone" /></label>
+          <label><span>Anliegen</span>
+            <select name="topic" required>
+              <option value="" selected disabled>Bitte wählen</option>
+              <option>Verkauf</option><option>Bewertung</option><option>Vermietung</option><option>Kaufberatung</option><option>Off-Market</option>
+            </select>
+          </label>
+          <label><span>Nachricht</span><textarea name="message" rows="5" required minlength="10"></textarea></label>
+          <label class="check">
+            <input type="checkbox" name="privacy" required />
+            <span>Datenschutz gelesen (<a href="./datenschutz.html" target="_blank" rel="noopener">Link</a>)</span>
+          </label>
+          <button class="btn btn--block" type="submit">Anfrage senden</button>
+          <p class="muted tiny">Preview: Mailto-Fallback. Live: Backend + Anti-Spam.</p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <div class="wrap foot__inner">
+        <div>
+          <strong>Florian Christ</strong>
+          <div class="muted tiny">Immobilienmakler Berlin</div>
+          <div class="muted tiny">© <span data-year></span></div>
+        </div>
+        <div class="foot__links">
+          <a href="./impressum.html">Impressum</a>
+          <a href="./datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="sticky">
+      <a class="btn btn--sm" href="#kontakt">Erstgespräch</a>
+      <a class="btn btn--sm btn--ghost" href="tel:+493000000000">Anrufen</a>
+    </div>
+
+    <script src="./script.js" defer></script>
+
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"RealEstateAgent",
+      "name":"Florian Christ",
+      "address":{"@type":"PostalAddress","addressLocality":"Berlin","addressCountry":"DE"},
+      "areaServed":["Berlin","Brandenburg"],
+      "telephone":"+49-30-00000000",
+      "url":"https://example.com"
+    }
+    </script>
+  </main>
+</body>
+</html>
