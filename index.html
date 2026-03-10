@@ -278,56 +278,60 @@
             <p class="muted">Preview-Form: sammelt Daten & öffnet Mailto (live: Backend + Anti-Spam).</p>
           </div>
 
-          <form class="value" data-value-form>
-            <label>
-              <span>Adresse / Kiez</span>
-              <input name="address" required placeholder="Straße, PLZ, Berlin" />
-            </label>
-            <div class="row">
-              <label>
+          <!-- Valuation Request – replace your current valuation inputs with this -->
+          <form class="vform" data-valuation>
+            <div class="vform__grid">
+              <label class="field field--full">
+                <span>Adresse / Kiez</span>
+                <input name="kiez" type="text" placeholder="Straße, PLZ, Berlin" />
+              </label>
+
+              <label class="field">
                 <span>Typ</span>
-                <select name="kind" required>
-                  <option value="" selected disabled>Bitte wählen</option>
+                <select name="typ">
+                  <option value="" selected>Bitte wählen</option>
                   <option>Wohnung</option>
                   <option>Haus</option>
                   <option>Kapitalanlage</option>
                   <option>Gewerbe</option>
                 </select>
               </label>
-              <label>
+
+              <label class="field">
                 <span>Wohnfläche (m²)</span>
-                <input name="sqm" inputmode="numeric" placeholder="z. B. 85" />
+                <input name="wf" type="number" inputmode="numeric" placeholder="z. B. 85" />
               </label>
-            </div>
-            <div class="row">
-              <label>
+
+              <label class="field">
                 <span>Zustand</span>
-                <select name="condition" required>
+                <select name="zustand">
                   <option>Exzellent</option>
                   <option>Gut</option>
-                  <option>Okay</option>
                   <option>Renovierungsbedürftig</option>
                 </select>
               </label>
-              <label>
+
+              <label class="field">
                 <span>Zeitraum</span>
-                <select name="timing" required>
+                <select name="zeitraum">
                   <option>0–3 Monate</option>
                   <option>3–6 Monate</option>
-                  <option>6–12 Monate</option>
+                  <option>6+ Monate</option>
                 </select>
               </label>
+
+              <label class="field field--full">
+                <span>E-Mail</span>
+                <input name="email" type="email" placeholder="name@email.de" />
+              </label>
             </div>
-            <label>
-              <span>E-Mail</span>
-              <input name="email" type="email" required placeholder="name@email.de" />
-            </label>
+
             <button class="btn btn--block" type="submit">Bewertung anfragen</button>
-            <p class="muted tiny">Mit Klick bestätigst du die <a href="./datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a>.</p>
+
+            <p class="tiny">
+              Mit Klick bestätigst du die <a href="./datenschutz.html">Datenschutzerklärung</a>.
+            </p>
           </form>
-        </div>
-      </div>
-    </section>
 
     <!-- STORY / TESTIMONIALS -->
     <section id="story" class="sec">
